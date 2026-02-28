@@ -1,0 +1,151 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "fueled/image-sequence",
+	"title": "Image Sequence",
+	"category": "theme",
+	"icon": "images-alt",
+	"description": "Used with sprite sheets to render 3D shape illustrations.",
+  "keywords": [
+    "image",
+    "sequence",
+    "sprite",
+    "3D",
+    "shape"
+  ],
+	"attributes": {
+    "illustration": {
+      "type": "string",
+      "enum": [
+        "shape-1",
+        "shape-2",
+        "shape-3",
+        "shape-4",
+        "shape-5",
+        "shape-6",
+        "shape-7",
+        "shape-8",
+        "shape-9",
+        "shape-10",
+        "shape-11",
+        "shape-12",
+        "shape-13",
+        "shape-14",
+        "shape-15",
+        "shape-16",
+        "shape-17",
+        "shape-18"
+      ],
+      "default": "shape-1"
+    },
+    "aspectRatio": {
+      "type": "string",
+      "enum": [
+        "1",
+        "4 / 3",
+        "16 / 9"
+      ],
+      "default": "16 / 9"
+    },
+    "blendMode": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "multiply",
+        "screen",
+        "overlay",
+        "darken",
+        "lighten",
+        "luminosity"
+      ],
+      "default": "normal"
+    }
+  },
+	"supports": {
+		"html": false
+	},
+  "variations": [
+    {
+      "name": "service",
+      "title": "Service",
+      "icon": "hammer",
+      "description": "Used for service cards. Shows a square shape with light background.",
+      "attributes": {
+        "illustration": "shape-1",
+        "aspectRatio": "1",
+        "blendMode": "screen",
+        "className": "is-variation-service",
+        "metadata": {
+          "name": "Service"
+        }
+      },
+      "keywords": [
+        "service",
+        "card"
+      ]
+    },
+    {
+      "name": "solution",
+      "title": "Solution",
+      "icon": "lightbulb",
+      "description": "Used for solution cards. Shows a square shape with dark background.",
+      "attributes": {
+        "illustration": "shape-1",
+        "aspectRatio": "1",
+        "blendMode": "screen",
+        "className": "is-variation-solution",
+        "metadata": {
+          "name": "Solution"
+        }
+      },
+      "keywords": [
+        "solution",
+        "card"
+      ]
+    },
+    {
+      "name": "expertise",
+      "title": "Expertise",
+      "icon": "businessperson",
+      "description": "Used for expertise cards. Shows a square shape with dark muted background.",
+      "attributes": {
+        "illustration": "shape-1",
+        "aspectRatio": "1",
+        "blendMode": "screen",
+        "className": "is-variation-expertise",
+        "metadata": {
+          "name": "Expertise"
+        }
+      },
+      "keywords": [
+        "expertise",
+        "card"
+      ]
+    },
+    {
+      "name": "glass-shape",
+      "title": "Glass Shape",
+      "icon": "superhero-alt",
+      "description": "Used for banners. Shows a square shape with gradient going through it.",
+      "attributes": {
+        "illustration": "shape-1",
+        "aspectRatio": "1",
+        "blendMode": "luminosity",
+        "className": "is-glass-shape",
+        "metadata": {
+          "name": "Glass shape"
+        }
+      },
+      "keywords": [
+        "glass",
+        "card"
+      ]
+    }
+  ],
+	"textdomain": "fueled",
+	"editorScript": "file:./index.ts",
+	"style": "file:./style.css",
+	"render": "file:./markup.php",
+	"viewScript": "file:./view.ts",
+  "editorStyle": "file:./editor.css"
+}

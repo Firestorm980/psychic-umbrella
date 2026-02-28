@@ -1,0 +1,136 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-fueled-image-sequence[class] {
+	aspect-ratio: var(--wp-block-fueled-image-sequence--aspect-ratio, 16 / 9);
+	display: grid;
+	height: auto;
+	max-width: 100%;
+	overflow: clip;
+	width: 100%;
+
+	& .wp-block-fueled-image-sequence__container {
+		position: relative;
+	}
+
+	& .wp-block-fueled-image-sequence__container--image {
+		height: 100%;
+		mix-blend-mode: var(--wp-block-fueled-image-sequence--blend-mode, normal);
+	}
+
+	& .image-sequence {
+		aspect-ratio: 1280 / 720;
+		height: auto;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+
+	& .wp-block-fueled-image-sequence__image {
+		height: 1300%;
+		width: 1200%;
+	}
+
+	&.is-variation-service {
+		background-image: url("../../images/services_card_bg@2x.webp");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: var(--wp--custom--border--presets--2--border-radius);
+
+		& .wp-block-fueled-image-sequence__inner {
+			align-items: center;
+			display: flex;
+			max-width: 100%;
+		}
+
+		& .wp-block-fueled-image-sequence__container--image {
+			align-self: center;
+			scale: 0.9;
+			transition: scale 0.3s ease-in-out;
+		}
+
+		&:is(:hover, :focus-within) {
+
+			& .wp-block-fueled-image-sequence__container--image {
+				scale: 1.06;
+			}
+		}
+	}
+
+	&.is-variation-expertise {
+		background-image:
+			linear-gradient(rgba(0 0 0 / 20%) 0%, rgba(0 0 0 / 20%) 100%),
+			url("../../images/solutions_card_bg@2x.webp");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: var(--wp--custom--border--presets--2--border-radius);
+
+		& .wp-block-fueled-image-sequence__inner {
+			align-items: center;
+			display: flex;
+			max-width: 100%;
+		}
+
+		& .wp-block-fueled-image-sequence__container--image {
+			align-self: center;
+			scale: 0.9;
+			transition: scale 0.3s ease-in-out;
+		}
+
+		&:is(:hover, :focus-within) {
+
+			& .wp-block-fueled-image-sequence__container--image {
+				scale: 1.06;
+			}
+		}
+	}
+
+	&.is-variation-solution {
+		background-image: url("../../images/solutions_card_bg@2x.webp");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: var(--wp--custom--border--presets--2--border-radius);
+
+		& .wp-block-fueled-image-sequence__inner {
+			align-items: center;
+			display: flex;
+			max-width: 100%;
+		}
+
+		& .wp-block-fueled-image-sequence__container--image {
+			align-self: center;
+			scale: 0.9;
+			transition: scale 0.3s ease-in-out;
+		}
+
+		&:is(:hover, :focus-within) {
+
+			& .wp-block-fueled-image-sequence__container--image {
+				scale: 1.06;
+			}
+		}
+	}
+
+	&.is-glass-shape {
+		background-image:
+			linear-gradient(to bottom, rgba(0 0 0 / 100%) 4px, rgba(0 0 0 / 0%) 4px, rgba(0 0 0 / 0%) calc(100% - 4px), rgba(0 0 0 / 100%) calc(100% - 4px)),
+			url("../../images/solutions_card_bg@2x.webp");
+		background-position: center;
+		background-repeat: repeat, no-repeat;
+		background-size: cover;
+
+		& .image-sequence {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
