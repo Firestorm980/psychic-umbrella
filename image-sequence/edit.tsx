@@ -6,24 +6,24 @@ import { __ } from '@wordpress/i18n';
 import { select } from '@wordpress/data';
 
 const IMAGE_MAP = {
-	'shape-1': 'Shape_01_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-2': 'Shape_02_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-3': 'Shape_03_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-4': 'Shape_04_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-5': 'Shape_05_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-6': 'Shape_06_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-7': 'Shape_07_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-8': 'Shape_08_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-9': 'Shape_09_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-10': 'Shape_10_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-11': 'Shape_11_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-12': 'Shape_12_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-13': 'Shape_13_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-14': 'Shape_14_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-15': 'Shape_15_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-16': 'Shape_16_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-17': 'Shape_17_Glass_sprite_f-151_c-12_r-13.webp',
-	'shape-18': 'Shape_18_Glass_sprite_f-151_c-12_r-13.webp',
+	'shape-1': 'Shape_01_Glass_frames',
+	'shape-2': 'Shape_02_Glass_frames',
+	'shape-3': 'Shape_03_Glass_frames',
+	'shape-4': 'Shape_04_Glass_frames',
+	'shape-5': 'Shape_05_Glass_frames',
+	'shape-6': 'Shape_06_Glass_frames',
+	'shape-7': 'Shape_07_Glass_frames',
+	'shape-8': 'Shape_08_Glass_frames',
+	'shape-9': 'Shape_09_Glass_frames',
+	'shape-10': 'Shape_10_Glass_frames',
+	'shape-11': 'Shape_11_Glass_frames',
+	'shape-12': 'Shape_12_Glass_frames',
+	'shape-13': 'Shape_13_Glass_frames',
+	'shape-14': 'Shape_14_Glass_frames',
+	'shape-15': 'Shape_15_Glass_frames',
+	'shape-16': 'Shape_16_Glass_frames',
+	'shape-17': 'Shape_17_Glass_frames',
+	'shape-18': 'Shape_18_Glass_frames',
 };
 
 export const BlockEdit = (props) => {
@@ -40,7 +40,7 @@ export const BlockEdit = (props) => {
 		},
 	});
 	const { template_uri } = select('core').getCurrentTheme();
-	const url = `${template_uri}/dist/images/sprites/${IMAGE_MAP[illustration]}`;
+	const url = `${template_uri}/dist/images/sprites/${IMAGE_MAP[illustration]}/frame_0001.webp`;
 
 	return (
 		<>

@@ -62,7 +62,11 @@
     }
   },
 	"supports": {
-		"html": false
+		"html": false,
+    "interactivity": {
+      "clientNavigation": true,
+      "interactive": true
+    }
 	},
   "variations": [
     {
@@ -146,6 +150,6 @@
 	"editorScript": "file:./index.ts",
 	"style": "file:./style.css",
 	"render": "file:./markup.php",
-	"viewScript": "file:./view.ts",
+	"viewScriptModule": "file:./view.ts",
   "editorStyle": "file:./editor.css"
 }
