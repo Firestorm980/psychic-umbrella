@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "title": "Interactive Locations Map",
+  "description": "Shows an interactive map of locations. Populated from the locations post type.",
+  "textdomain": "armstrong-theme",
+  "name": "armstrong/interactive-locations-map",
+  "icon": "location-alt",
+  "category": "formatting",
+  "attributes":{
+    "heading": {
+      "type" : "string"
+    },
+    "content": {
+      "type" : "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "editorScript": "file:./index.js"
+}
